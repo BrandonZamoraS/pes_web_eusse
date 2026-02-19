@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  /* Escala de marca (azules/cyan) */
+  /* Escala de marca */
   --color-brand-900: #2f5386;
   --color-brand-800: #0b6494;
   --color-brand-700: #1e91ae;
@@ -32,21 +32,4 @@
 
 :root {
   color-scheme: light;
-}
-
-.dark {
-  --color-primary: var(--color-brand-800);
-  --color-primary-foreground: #ffffff;
-
-  --color-secondary: var(--color-brand-600);
-  --color-secondary-foreground: #062a36;
-
-  --color-background: #0b3a55;
-  --color-foreground: #e6f2f7;
-
-  --color-accent: var(--color-brand-500);
-  --color-accent-foreground: #052a33;
-
-  --color-muted: #0f4a67;
-  --color-muted-foreground: #cfe8f1;
 }
