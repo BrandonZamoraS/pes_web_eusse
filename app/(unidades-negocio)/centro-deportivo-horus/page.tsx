@@ -3,15 +3,15 @@ import heroHorus from "@/public/Heros/hero_horus.jpg";
 
 const GALLERY = [
   {
-    src: "/gasolinera-2.jpg",
+    src: "/gym/gym1.jpg",
     caption: "Cancha techada con césped sintético de última generación.",
   },
   {
-    src: "/gasolinera-3.jpg",
+    src: "/gym/gym2.jpg",
     caption: "Zona de hidratación y descanso para equipos completos.",
   },
   {
-    src: "/gasolinera-2.jpg",
+    src: "/gym/gym3.jpg",
     caption: "Iluminación LED para partidos nocturnos sin sombras.",
   },
 ] as const;

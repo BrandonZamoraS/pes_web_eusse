@@ -11,14 +11,14 @@ export default function Footer() {
     <footer className="bg-[#003366] text-white py-4 px-6 md:px-12">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
         <Image
-          src="/logo-eusse-reducido.PNG"
+          src="/logo-eusse-reducido.png"
           alt="Grupo Eusse"
           width={80}
           height={40}
           className="object-contain block md:hidden"
         />
         <Image
-          src="/logo-eusse-completo.PNG"
+          src="/logo-eusse-completo.png"
           alt="Grupo Eusse"
           width={100}
           height={60}

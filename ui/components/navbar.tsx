@@ -65,12 +65,12 @@ export default function Navbar() {
           className="h-full shrink-0 sm:shrink basis-200px sm:basis-240px md:basis-200px"
         >
           <img
-            src="/logo-eusse-completo.PNG"
+            src="/logo-eusse-completo.png"
             alt="Eusse"
             className="h-full max-h-14 w-auto object-contain transition-[height] duration-200 hidden sm:block"
           />
           <img
-            src="/logo-eusse-reducido.PNG"
+            src="/logo-eusse-reducido.png"
             alt="Eusse"
             className="h-full max-h-14 w-auto object-contain transition-[height] duration-200 block sm:hidden"
           />
@@ -83,6 +83,7 @@ export default function Navbar() {
             <li key={l.href} className="shrink-0">
               <Link
                 href={l.href}
+                prefetch={true}
                 className={`transition-colors duration-200 text-[clamp(1rem,1.5vw,1.3rem)]   ${
                   isActive(l.href)
                     ? "text-accent font-semibold border-b-2 border-accent pb-1"

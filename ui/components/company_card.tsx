@@ -29,6 +29,7 @@ export default function CompanyCardGrid({ companies }: { companies: Company[] })
         >
           <Link
             href={company.href}
+            prefetch={true}
             className="flex flex-col relative bg-white rounded-md p-8 shadow-md hover:shadow-xl transition-all duration-300 h-full"
           >
             <div className="relative mx-auto mb-4 h-24 w-full sm:h-28 shrink-0">
