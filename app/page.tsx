@@ -1,7 +1,9 @@
 import AboutSection from "@/ui/components/about_us";
+import CareersSection from "@/ui/components/career_section";
 import CompanySection from "@/ui/components/company_section";
 import HeroCarousel from "@/ui/components/hero_carousel";
 import PromotionsSection from "@/ui/components/promotion_section";
+
 
 export default function Home() {
   return (
@@ -10,6 +12,7 @@ export default function Home() {
         <AboutSection />
         <PromotionsSection />
         <CompanySection />
+        <CareersSection />
     </main>
   );
 }
