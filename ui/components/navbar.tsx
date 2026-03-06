@@ -16,6 +16,7 @@ export default function Navbar() {
   const pathname = usePathname();
   const [companiesInView, setCompaniesInView] = useState(false);
   const { isMagnifyEnabled, toggleMagnify } = useMagnify();
+  const magnifyTooltipId = "magnify-tooltip";
   /*
     Esta función tiene el fin de remarcar en el navbar el enlace de "Compañías del Grupo" 
     cuando el usuario esté viendo esa sección en la página de inicio. Si el usuario no está 
@@ -96,19 +97,29 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <button
-          type="button"
-          onClick={toggleMagnify}
-          aria-pressed={isMagnifyEnabled}
-          aria-label={isMagnifyEnabled ? "Desactivar lupa" : "Activar lupa"}
-          className={`hidden md:inline-flex ml-3 h-10 w-10 items-center justify-center rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/70 ${
-            isMagnifyEnabled
-              ? "border-accent bg-accent/20 text-brand-900"
-              : "border-brand-900/20 text-brand-900 hover:border-accent/60 hover:text-accent"
-          }`}
-        >
-          <img src="/svg/icono_lupa.svg" alt="" className="h-5 w-5" />
-        </button>
+        <div className="group relative ml-3 hidden md:inline-flex">
+          <button
+            type="button"
+            onClick={toggleMagnify}
+            aria-pressed={isMagnifyEnabled}
+            aria-label={isMagnifyEnabled ? "Desactivar lupa" : "Activar lupa"}
+            aria-describedby={magnifyTooltipId}
+            className={`h-10 w-10 items-center justify-center rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/70 inline-flex ${
+              isMagnifyEnabled
+                ? "border-accent bg-accent/20 text-brand-900"
+                : "border-brand-900/20 text-brand-900 hover:border-accent/60 hover:text-accent"
+            }`}
+          >
+            <img src="/svg/icono_lupa.svg" alt="" className="h-5 w-5" />
+          </button>
+          <span
+            id={magnifyTooltipId}
+            role="tooltip"
+            className="pointer-events-none absolute left-1/2 top-full z-20 mt-2 w-max max-w-56 -translate-x-1/2 rounded-md bg-brand-900 px-3 py-2 text-center text-xs leading-snug text-white opacity-0 shadow-lg transition-opacity duration-200 group-hover:opacity-100 group-focus-within:opacity-100"
+          >
+            Lupa para aumentar el tamaño de los objetos
+          </span>
+        </div>
         <div className="md:hidden ml-2 shrink-0">
           <BurgerBtn links={LINKS} />
         </div>
