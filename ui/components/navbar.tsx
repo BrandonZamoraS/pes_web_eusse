@@ -1,7 +1,9 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { Search } from "lucide-react";
 import BurgerBtn from "./burguer_btn";
 import { useMagnify } from './Magnify_comps/magnify-provider';
 
@@ -65,14 +67,20 @@ export default function Navbar() {
           href="/"
           className="h-full shrink-0 sm:shrink basis-200px sm:basis-240px md:basis-200px"
         >
-          <img
+          <Image
             src="/logo-eusse-completo.webp"
             alt="Eusse"
+            width={240}
+            height={56}
+            sizes="240px"
             className="h-full max-h-14 w-auto object-contain transition-[height] duration-200 hidden sm:block"
           />
-          <img
+          <Image
             src="/logo-eusse-reducido.webp"
             alt="Eusse"
+            width={80}
+            height={56}
+            sizes="80px"
             className="h-full max-h-14 w-auto object-contain transition-[height] duration-200 block sm:hidden"
           />
         </Link>
@@ -110,7 +118,7 @@ export default function Navbar() {
                 : "border-brand-900/20 text-brand-900 hover:border-accent/60 hover:text-accent"
             }`}
           >
-            <img src="/svg/icono_lupa.svg" alt="" className="h-5 w-5" />
+            <Search className="h-5 w-5" aria-hidden="true" />
           </button>
           <span
             id={magnifyTooltipId}

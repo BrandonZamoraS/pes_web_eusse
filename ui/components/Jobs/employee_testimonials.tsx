@@ -69,7 +69,6 @@ export default function EmployeeTestimonials() {
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
                   className="absolute inset-0 -z-10 h-full w-full scale-110 object-cover object-top"
-                  priority={i === 0}
                 />
               )}
               <div className="absolute inset-0 -z-10 bg-linear-to-b from-brand-900/60 via-brand-900/70 to-brand-900/80" />

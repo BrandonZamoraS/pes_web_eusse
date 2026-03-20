@@ -64,13 +64,12 @@ export default function PromoCarousel() {
               >
                 <div className="relative mb-4 h-32 w-full overflow-hidden rounded-xl bg-brand-100">
                   <Image
-                    src={item.imageSrc}
-                    alt={item.imageAlt}
-                    fill
-                    sizes="(max-width: 1024px) 256px, 288px"
-                    className="object-cover"
-                    priority={isActive}
-                  />
+                  src={item.imageSrc}
+                  alt={item.imageAlt}
+                  fill
+                  sizes="(max-width: 1024px) 256px, 288px"
+                  className="object-cover"
+                />
                 </div>
                 <h3 className="text-lg font-bold text-brand-900">{item.title}</h3>
                 {isActive && (

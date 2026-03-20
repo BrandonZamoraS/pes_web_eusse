@@ -81,7 +81,7 @@ export default function TimelineSection() {
             >
               <Image src={src} alt={`Nuestra historia ${index + 1}`} width={0} height={0}
                 className="h-auto w-auto max-h-full max-w-full object-contain z-10"
-                sizes="(max-width: 1024px) 50vw, 400px" style={{ width: "auto", height: "auto" }} priority
+                sizes="(max-width: 1024px) 50vw, 400px" style={{ width: "auto", height: "auto" }}
               />
               {idx !== 1 && <div className="absolute inset-0 bg-black/15 hover:bg-black/5 transition-colors duration-300 z-20" />}
             </motion.div>
@@ -103,7 +103,7 @@ export default function TimelineSection() {
           >
             <Image src={PHOTOS[current]} alt={`Nuestra historia ${current + 1}`} width={0} height={0}
               className="h-auto w-auto max-h-full max-w-full object-contain"
-              sizes="(max-width: 768px) 90vw, 600px" style={{ width: "auto", height: "auto" }} priority
+              sizes="(max-width: 768px) 90vw, 600px" style={{ width: "auto", height: "auto" }}
             />
           </motion.div>
         </div>
