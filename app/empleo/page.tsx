@@ -24,18 +24,23 @@ export default function EmpleoPage() {
           className="object-cover"
           priority
           fetchPriority="high"
+          sizes="100vw"
         />
         <div className="absolute inset-0 bg-linear-to-b from-brand-900/70 via-brand-800/60 to-brand-600/50" />
         <div className="relative mx-auto flex h-full max-w-5xl flex-col items-center justify-center gap-6 px-6 text-center text-brand-50 md:items-start md:text-left">
           <p className="text-xs font-semibold uppercase tracking-[0.35em] text-brand-200">
             Empleo Eusse
           </p>
-          <h1 className={`${montserratBold.className} text-[clamp(2rem,4vw,4rem)] leading-tight`}>
+          <h1
+            className={`${montserratBold.className} text-[clamp(2rem,4vw,4rem)] leading-tight`}
+          >
             Trabajá con un equipo que impulsa el futuro energético del país
           </h1>
-          <p className={`${montserrat.className} max-w-3xl text-[clamp(1rem,1.75vw,1.25rem)] text-brand-50/85`}>
-            Creemos en el crecimiento compartido, la capacitación continua y el bienestar de las
-            personas que hacen posible cada proyecto.
+          <p
+            className={`${montserrat.className} max-w-3xl text-[clamp(1rem,1.75vw,1.25rem)] text-brand-50/85`}
+          >
+            Creemos en el crecimiento compartido, la capacitación continua y el
+            bienestar de las personas que hacen posible cada proyecto.
           </p>
         </div>
       </section>
@@ -46,7 +51,9 @@ export default function EmpleoPage() {
           <p className="text-xs font-semibold uppercase tracking-[0.35em] text-brand-700">
             Vida en Eusse
           </p>
-          <h2 className="mt-2 text-3xl font-bold">Historias de nuestro equipo</h2>
+          <h2 className="mt-2 text-3xl font-bold">
+            Historias de nuestro equipo
+          </h2>
           <div className="mt-8">
             <VideoSection
               videoId="8y6n12TkNYU"

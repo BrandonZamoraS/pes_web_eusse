@@ -117,18 +117,18 @@ const MEMBERSHIP_INCLUDES = [
 const GALLERY_IMAGES = [
   {
     src: "/gym/gym1.webp",
-    alt: "Sala de entrenamiento funcional con equipo de Balance Fit",
-    caption: "Entrenamientos funcionales con equipo de última generación",
+    alt: "Area de maquinas y entrenamiento en Balance Fit",
+    caption: "Sala principal con maquinas de fuerza y espacio amplio para entrenar",
   },
   {
     src: "/gym/gym2.webp",
-    alt: "Zona de pesas y cardio en Balance Fit",
-    caption: "Áreas diferenciadas para fuerza, cardio y movilidad",
+    alt: "Recepcion y exhibicion de suplementos en Balance Fit",
+    caption: "Recepcion del gimnasio con exhibicion de suplementos y productos",
   },
   {
     src: "/gym/gym3.webp",
-    alt: "Coach guiando una sesión personalizada",
-    caption: "Coaches certificados acompañándote en cada sesión",
+    alt: "Sala de spinning con bicicletas frente a ventanales",
+    caption: "Espacio de cycling indoor con bicicletas y vista exterior",
   },
 ] as const;
 
@@ -270,7 +270,7 @@ export default function GimnasioBalanceFitPage() {
             </p>
             <h2 className="mt-2 text-3xl font-bold">Programas para cada estilo</h2>
             <p className="mt-2 max-w-2xl text-brand-700">
-              Agenda flexible con cupos limitados. Reserva desde la app para asegurar tu lugar.
+              Agenda flexible con horarios definidos para que organices tu rutina con facilidad.
             </p>
           </div>
           <div className="grid gap-6 md:grid-cols-3">
@@ -281,7 +281,7 @@ export default function GimnasioBalanceFitPage() {
         </div>
       </section>
 
-      {/* Entrenadores */}
+      {/* Entrenadores 
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
         <div className="mb-10 text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.35em] text-brand-600">
@@ -311,7 +311,7 @@ export default function GimnasioBalanceFitPage() {
           ))}
         </div>
       </section>
-
+        */}
       {/* Galería */}
       <section className="bg-brand-200/40 py-16">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
@@ -321,7 +321,7 @@ export default function GimnasioBalanceFitPage() {
             </p>
             <h2 className="mt-2 text-3xl font-bold">Un vistazo a nuestras instalaciones</h2>
             <p className="mt-2 text-brand-700">
-              Espacios diseñados para que cada entrenamiento, clase y recuperación sea una experiencia premium.
+              Sala de entrenamiento, recepción y espacio de cycling en imágenes reales del gimnasio.
             </p>
           </div>
           <div className="grid gap-6 md:grid-cols-3">

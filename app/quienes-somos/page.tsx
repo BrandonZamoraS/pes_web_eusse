@@ -18,6 +18,7 @@ export default function Home() {
             className="object-cover"
             priority
             fetchPriority="high"
+            sizes="100vw"
           />
           <div className="absolute inset-0 bg-linear-to-b from-brand-900/70 via-brand-800/60 to-brand-600/50" />
           <div className="relative mx-auto flex h-full max-w-5xl flex-col items-center justify-center gap-6 px-6 text-center text-brand-50 md:items-start md:text-left">
@@ -32,8 +33,9 @@ export default function Home() {
             <p
               className={`${montserrat.className} max-w-3xl text-[clamp(1rem,1.75vw,1.25rem)] text-brand-50/85`}
             >
-              Nacimos en 2011 como una red de transporte pesado y hoy somos una familia de estaciones,
-              servicios y programas comunitarios que acompañan el crecimiento de Costa Rica.
+              Nacimos en 2011 como una red de transporte pesado y hoy somos una
+              familia de estaciones, servicios y programas comunitarios que
+              acompañan el crecimiento de Costa Rica.
             </p>
           </div>
         </div>
@@ -45,7 +47,9 @@ export default function Home() {
           <p className="text-xs font-semibold uppercase tracking-[0.35em] text-brand-700">
             Nuestra historia
           </p>
-          <h2 className="mt-2 text-3xl font-bold">Un recorrido en primera persona</h2>
+          <h2 className="mt-2 text-3xl font-bold">
+            Un recorrido en primera persona
+          </h2>
           <div className="mt-8">
             <VideoSection
               videoId="8y6n12TkNYU"
@@ -55,9 +59,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-          <VisionMission />
-          <ValuesSection />
-          <TimelineSection />
+      <VisionMission />
+      <ValuesSection />
+      <TimelineSection />
     </div>
   );
 }
