@@ -58,7 +58,7 @@ export default function EmpleoPage() {
           </h2>
           <div className="mt-8">
             <VideoSection
-              videoId="8y6n12TkNYU"
+              videoId="DTjCue9udOE"
               posterSrc="/Video_Covers/video_cover3.webp"
               className="mx-auto w-full max-w-4xl"
             />

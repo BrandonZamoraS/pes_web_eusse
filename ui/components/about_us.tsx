@@ -109,7 +109,7 @@ export default function AboutSection() {
           transition={{ duration: 0.6, delay: 0.1 }}
         >
           <VideoSection
-            videoId="8y6n12TkNYU"
+            videoId="H6Bw3KxEaQY"
             posterSrc="/Video_Covers/video_cover1.webp"
             className="mx-auto mt-6 w-full max-w-4xl"
           />
