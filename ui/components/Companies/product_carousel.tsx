@@ -5,13 +5,13 @@ import { useEffect, useState } from "react";
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi2";
 
 const PRODUCTS = [
-  { imageSrc: "/aceites/aceite1.webp", imageAlt: "Aceite lubricante 1" },
-  { imageSrc: "/aceites/aceite2.webp", imageAlt: "Aceite lubricante 2" },
-  { imageSrc: "/aceites/aceite3.webp", imageAlt: "Aceite lubricante 3" },
-  { imageSrc: "/aceites/aceite4.webp", imageAlt: "Aceite lubricante 4" },
-  { imageSrc: "/aceites/aceite5.webp", imageAlt: "Aceite lubricante 5" },
-  { imageSrc: "/aceites/aceite6.webp", imageAlt: "Aceite lubricante 6" },
-  { imageSrc: "/aceites/aceite7.webp", imageAlt: "Aceite lubricante 7" },
+  { imageSrc: "/Aceites/aceite1.webp", imageAlt: "Aceite lubricante 1" },
+  { imageSrc: "/Aceites/aceite2.webp", imageAlt: "Aceite lubricante 2" },
+  { imageSrc: "/Aceites/aceite3.webp", imageAlt: "Aceite lubricante 3" },
+  { imageSrc: "/Aceites/aceite4.webp", imageAlt: "Aceite lubricante 4" },
+  { imageSrc: "/Aceites/aceite5.webp", imageAlt: "Aceite lubricante 5" },
+  { imageSrc: "/Aceites/aceite6.webp", imageAlt: "Aceite lubricante 6" },
+  { imageSrc: "/Aceites/aceite7.webp", imageAlt: "Aceite lubricante 7" },
 ] as const;
 
 const COUNT = PRODUCTS.length;
