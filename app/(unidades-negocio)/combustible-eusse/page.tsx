@@ -1,4 +1,6 @@
+import type { Metadata } from "next";
 import Image from "next/image";
+import { buildPageMetadata } from "@/lib/site";
 import { montserrat, montserratBold } from "@/ui/fonts";
 import MapComponent from "@/ui/components/Companies/map_component";
 import PeddlerExplainer from "@/ui/components/Companies/peddler_explainer";
@@ -11,6 +13,13 @@ const HERO_CTAS = [
   { href: "#mapa-estaciones", label: "Explorar estaciones", style: "bg-brand-50 text-brand-900 hover:bg-brand-200" },
   { href: "#peddler",         label: "Ver Peddler",         style: "border border-brand-50/60 bg-transparent text-brand-50 hover:bg-brand-50/10" },
 ] as const;
+
+export const metadata: Metadata = buildPageMetadata({
+  title: "Combustible Eusse",
+  description:
+    "Ubica estaciones de servicio Grupo Eusse y conoce su red de combustible, rutas y soluciones para viajeros y flotillas.",
+  path: "/combustible-eusse",
+});
 
 export default function Home() {
   return (

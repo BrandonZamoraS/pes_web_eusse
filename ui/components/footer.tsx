@@ -37,6 +37,7 @@ export default function Footer() {
           <Link
             href="https://www.facebook.com/grupoeusse"
             target="_blank"
+            rel="noopener noreferrer"
             className="hover:text-blue-400 transition-colors"
             aria-label="Facebook"
           >
@@ -46,6 +47,7 @@ export default function Footer() {
           <Link
             href="https://www.instagram.com/grupoeusse"
             target="_blank"
+            rel="noopener noreferrer"
             className="hover:text-pink-500 transition-colors"
             aria-label="Instagram"
           >

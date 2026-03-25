@@ -1,4 +1,6 @@
+import type { Metadata } from "next";
 import Image from "next/image";
+import { buildPageMetadata } from "@/lib/site";
 import { montserrat, montserratBold } from "@/ui/fonts";
 import PromoCarousel from "@/ui/components/Companies/promo_carousel";
 import MapComponent from "@/ui/components/Companies/map_component";
@@ -17,6 +19,13 @@ const CTA_LINKS = [
     className: "border border-brand-50/40 text-brand-50 hover:bg-brand-50/10",
   },
 ] as const;
+
+export const metadata: Metadata = buildPageMetadata({
+  title: "Eusse Market",
+  description:
+    "Descubre las tiendas Eusse Market, sus ubicaciones y la propuesta de conveniencia disponible en estaciones seleccionadas.",
+  path: "/eusse-market",
+});
 
 export default function EusseMarketPage() {
   return (

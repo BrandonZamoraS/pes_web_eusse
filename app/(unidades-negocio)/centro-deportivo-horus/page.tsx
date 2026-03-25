@@ -1,4 +1,6 @@
+import type { Metadata } from "next";
 import Image from "next/image";
+import { buildPageMetadata } from "@/lib/site";
 import heroHorus from "@/public/Heros/hero_horus.webp";
 
 const GALLERY = [
@@ -20,6 +22,12 @@ const GALLERY = [
   },
 ] as const;
 
+export const metadata: Metadata = buildPageMetadata({
+  title: "Centro Deportivo Horus",
+  description:
+    "Reserva canchas de futbol 5, coordina entrenamientos y organiza partidos en Centro Deportivo Horus.",
+  path: "/centro-deportivo-horus",
+});
 
 export default function CentroDeportivoHorusPage() {
   return (
@@ -54,7 +62,7 @@ export default function CentroDeportivoHorusPage() {
             <a
               href="https://wa.me/50688889090?text=Hola%20quiero%20reservar%20una%20cancha%20en%20Centro%20Deportivo%20Horus"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="w-full rounded-md bg-brand-50 px-6 py-3 text-center text-sm font-semibold text-brand-900 transition hover:bg-brand-200 sm:w-auto"
             >
               Reservar cancha
@@ -121,7 +129,7 @@ export default function CentroDeportivoHorusPage() {
             <a
               href="https://wa.me/50688889090?text=Hola%20quiero%20reservar%20una%20cancha%20en%20Centro%20Deportivo%20Horus"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="flex items-center justify-center rounded-md bg-brand-900 px-4 py-3 text-sm font-semibold text-brand-50 shadow-sm shadow-brand-900/15 transition hover:bg-brand-800"
             >
               Reservar por WhatsApp

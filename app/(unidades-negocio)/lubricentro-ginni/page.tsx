@@ -1,4 +1,6 @@
+import type { Metadata } from "next";
 import Image from "next/image";
+import { buildPageMetadata } from "@/lib/site";
 import { montserrat, montserratBold } from "@/ui/fonts";
 import ServiceContactForm from "@/ui/components/Companies/service_contact_form";
 import ProductCarousel from "@/ui/components/Companies/product_carousel";
@@ -11,6 +13,13 @@ const SCHEDULE = [
   { days: "Sabado", hours: "7:00 a.m. - 4:00 p.m." },
   { days: "Domingo", hours: "Cerrado" },
 ] as const;
+
+export const metadata: Metadata = buildPageMetadata({
+  title: "Lubricentro Ginni",
+  description:
+    "Agenda servicios de lubricacion, frenos, llantas y diagnostico en Lubricentro Ginni, en Naranjo de Alajuela.",
+  path: "/lubricentro-ginni",
+});
 
 export default function LubricentroGinni() {
   return (

@@ -1,9 +1,18 @@
+import type { Metadata } from "next";
 import VideoSection from "@/ui/components/video_section";
 import VisionMission from "@/ui/components/About/vision_mision";
 import ValuesSection from "@/ui/components/About/values_section";
 import TimelineSection from "@/ui/components/About/timeline_section";
 import Image from "next/image";
+import { buildPageMetadata } from "@/lib/site";
 import { montserrat, montserratBold } from "@/ui/fonts";
+
+export const metadata: Metadata = buildPageMetadata({
+  title: "Quienes Somos",
+  description:
+    "Conoce la historia, valores y vision de Grupo Eusse y como ha evolucionado su operacion en Costa Rica.",
+  path: "/quienes-somos",
+});
 
 export default function Home() {
   return (

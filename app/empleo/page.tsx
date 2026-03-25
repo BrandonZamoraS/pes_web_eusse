@@ -4,13 +4,15 @@ import VideoSection from "@/ui/components/video_section";
 import CareersSection from "@/ui/components/career_section";
 import { WhyChooseUs } from "@/ui/components/Jobs/why_chose_us";
 import EmployeeTestimonials from "@/ui/components/Jobs/employee_testimonials";
+import { buildPageMetadata } from "@/lib/site";
 import { montserratBold, montserrat } from "@/ui/fonts";
 
-export const metadata: Metadata = {
-  title: "Empleo | Grupo Eusse",
+export const metadata: Metadata = buildPageMetadata({
+  title: "Empleo",
   description:
-    "Sumate al equipo de Grupo Eusse. Conocé nuestras oportunidades laborales, cultura de trabajo y beneficios.",
-};
+    "Sumate al equipo de Grupo Eusse y conoce oportunidades laborales, cultura de trabajo y beneficios.",
+  path: "/empleo",
+});
 
 export default function EmpleoPage() {
   return (

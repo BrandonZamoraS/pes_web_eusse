@@ -1,4 +1,6 @@
+import type { Metadata } from "next";
 import Image from "next/image";
+import { buildPageMetadata } from "@/lib/site";
 import { montserrat, montserratBold } from "@/ui/fonts";
 import GymClassCard from "@/ui/components/Companies/gym_class_card";
 import GymMembershipCard from "@/ui/components/Companies/gym_membership_card";
@@ -153,6 +155,13 @@ const HERO_ACTIONS = [
   },
 ] as const;
 
+export const metadata: Metadata = buildPageMetadata({
+  title: "Gimnasio Balance Fit",
+  description:
+    "Conoce clases, horarios y membresias de Balance Fit para entrenar con acompanamiento experto en Naranjo.",
+  path: "/gimnasio-balance-fit",
+});
+
 export default function GimnasioBalanceFitPage() {
   return (
     <div className="bg-brand-50 text-brand-900">
@@ -190,7 +199,9 @@ export default function GimnasioBalanceFitPage() {
               <a
                 key={label}
                 href={href}
-                {...(external ? { target: "_blank", rel: "noreferrer" } : {})}
+                {...(external
+                  ? { target: "_blank", rel: "noopener noreferrer" }
+                  : {})}
                 className={`w-full rounded-md px-6 py-3 text-center text-sm font-semibold transition sm:w-auto ${className}`}
               >
                 {label}
