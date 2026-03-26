@@ -71,13 +71,13 @@ export default function LubricentroGinni() {
             inmediato desde la ruta 141.
           </p>
           <a
-            href="tel:+50622571122"
+            href="tel:+50687628632"
             className="mt-6 mx-auto flex w-fit flex-col rounded-md bg-brand-50 px-6 py-3 shadow-sm shadow-brand-900/5 transition-colors hover:bg-brand-100"
           >
             <span className="text-xs font-semibold uppercase tracking-[0.25em] text-brand-600">
               Telefono
             </span>
-            <span className="mt-1 font-semibold text-brand-900">+506 2257-1122</span>
+            <span className="mt-1 font-semibold text-brand-900">+506 87628632</span>
           </a>
         </div>
       </section>
