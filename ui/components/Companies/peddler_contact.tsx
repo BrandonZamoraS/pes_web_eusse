@@ -3,8 +3,8 @@
 import ServiceContactForm from "@/ui/components/Companies/service_contact_form";
 
 const CONTACT_INFO = [
-  { label: "Línea directa", value: "+506 8822-7788", href: "tel:+50688227788" },
-  { label: "Correo",        value: "peddler@eusse.cr", href: "mailto:peddler@eusse.cr" },
+  { label: "Línea directa", value: "+506 7295 5709", href: "tel:+50672955709" },
+  { label: "Correo",        value: "info1@grupoeusse.com", href: "mailto:info1@grupoeusse.com" },
 ] as const;
 
 export default function PeddlerContact() {
@@ -46,4 +46,3 @@ export default function PeddlerContact() {
     </section>
   );
 }
-

@@ -54,7 +54,7 @@ export default function PromotionsSection() {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl transition-transform duration-500 group-hover:scale-[1.03]">
                 <Image
                   src="/promocion-eusse.webp"
-                  alt="Promoción Eusse – gana un SWM Golf 2025"
+                  alt="Promoción Eusse – gana un SWM G01F 2025"
                   width={1200}
                   height={800}
                   className="w-full h-auto"
@@ -63,7 +63,7 @@ export default function PromotionsSection() {
                 <div className="absolute bottom-0 left-0 right-0 p-6 flex items-center gap-2">
                   <Sparkles className="w-6 h-6 text-[#1CA9C9]" aria-hidden="true" />
                   <span className="text-white font-bold text-xl">
-                    SWM Golf 2025
+                    SWM G01F 2025
                   </span>
                 </div>
               </div>
@@ -82,14 +82,17 @@ export default function PromotionsSection() {
               </h3>
 
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                Con compras superiores a{" "}
+                Por cada compra igual o superior a{" "}
                 <span className="font-bold text-[#1CA9C9]">₡5,000</span>,
                 participás por un{" "}
-                <span className="font-bold text-[#003366]">SWM Golf 2025</span>
+                <span className="font-bold text-[#003366]">SWM G01F 2025</span>
               </p>
 
               <ul className="space-y-4 mb-8" aria-label="Beneficios de la promoción">
-                {["Vehículo SWM Golf 2025 último modelo", "Participación en cada compra"].map((item) => (
+                {[
+                  "Vehículo SWM G01F 2025",
+                  "Participación por cada compra igual o superior a ₡5,000",
+                ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
                     <div className="w-6 h-6 rounded-full bg-[#1CA9C9]/20 flex items-center justify-center shrink-0 mt-1" aria-hidden="true">
                       <div className="w-2 h-2 rounded-full bg-[#1CA9C9]" />

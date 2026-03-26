@@ -1,8 +1,6 @@
-
 'use client'
 
 import { motion } from 'framer-motion';
-import { MdPhone, MdOutlineEmail } from "react-icons/md";
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -10,8 +8,7 @@ type Company = {
   logo: string;
   title: string;
   href: string;
-  phone: string;
-  email: string;
+  descriptor: string;
 };
 
 export default function CompanyCardGrid({ companies }: { companies: Company[] }) {
@@ -49,19 +46,13 @@ export default function CompanyCardGrid({ companies }: { companies: Company[] })
             </div>
 
             <div className="flex-grow flex flex-col justify-end">
-              <div className="flex items-center gap-2 mb-4 justify-center">
-                <MdPhone className="text-brand-900" aria-hidden="true" />
-                <span className="text-sm font-medium text-brand-900">
-                  {company.phone}
-                </span>
-              </div>
+              <p className="mb-4 min-h-[3rem] text-center text-sm text-brand-700">
+                {company.descriptor}
+              </p>
 
-              <div className="flex items-center gap-2 mb-2 justify-center">
-                <MdOutlineEmail className="text-brand-900" aria-hidden="true" />
-                <span className="text-sm font-medium text-brand-900">
-                  {company.email}
-                </span>
-              </div>
+              <span className="mx-auto inline-flex items-center text-sm font-semibold text-brand-900">
+                Ver detalles
+              </span>
             </div>
           </Link>
         </motion.div>

@@ -60,7 +60,7 @@ export default function CentroDeportivoHorusPage() {
           </p>
           <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:items-center sm:justify-center md:justify-start">
             <a
-              href="https://wa.me/50688889090?text=Hola%20quiero%20reservar%20una%20cancha%20en%20Centro%20Deportivo%20Horus"
+              href="https://wa.me/50687771591?text=Hola%20quiero%20reservar%20una%20cancha%20en%20Centro%20Deportivo%20Horus"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full rounded-md bg-brand-50 px-6 py-3 text-center text-sm font-semibold text-brand-900 transition hover:bg-brand-200 sm:w-auto"
@@ -120,14 +120,14 @@ export default function CentroDeportivoHorusPage() {
                 WhatsApp &amp; Teléfono
               </p>
               <a
-                href="tel:+50688889090"
+                href="tel:+50687771591"
                 className="mt-1 block text-lg font-bold hover:underline"
               >
-                +506 8888-9090
+                +506 8777 1591
               </a>
             </address>
             <a
-              href="https://wa.me/50688889090?text=Hola%20quiero%20reservar%20una%20cancha%20en%20Centro%20Deportivo%20Horus"
+              href="https://wa.me/50687771591?text=Hola%20quiero%20reservar%20una%20cancha%20en%20Centro%20Deportivo%20Horus"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center rounded-md bg-brand-900 px-4 py-3 text-sm font-semibold text-brand-50 shadow-sm shadow-brand-900/15 transition hover:bg-brand-800"

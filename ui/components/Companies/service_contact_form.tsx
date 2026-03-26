@@ -166,7 +166,7 @@ export default function ServiceContactForm({
         <label htmlFor="phone" className={labelCls}>Número telefónico</label>
         <input
           id="phone" name="phone" type="tel" required autoComplete="tel"
-          placeholder="ej. +506 8888-8888"
+          placeholder="Tu telefono"
           value={form.phone}
           onChange={(e) => setForm((p) => ({ ...p, phone: e.target.value, phoneError: null }))}
           className={inputCls}
@@ -181,7 +181,7 @@ export default function ServiceContactForm({
         <label htmlFor="full-name" className={labelCls}>Nombre completo</label>
         <input
           id="full-name" name="name" type="text" required autoComplete="name"
-          placeholder="Ingresá tu nombre"
+          placeholder="Tu nombre"
           value={form.name}
           onChange={(e) => setForm((p) => ({ ...p, name: e.target.value }))}
           className={inputCls}
@@ -193,7 +193,7 @@ export default function ServiceContactForm({
         <label htmlFor="email" className={labelCls}>Correo electrónico</label>
         <input
           id="email" name="email" type="email" required autoComplete="email"
-          placeholder="ej. contacto@empresa.com"
+          placeholder="Correo electronico"
           value={form.email}
           onChange={(e) => setForm((p) => ({ ...p, email: e.target.value, emailError: null }))}
           className={inputCls}
@@ -208,7 +208,7 @@ export default function ServiceContactForm({
         <label htmlFor="service-detail" className={labelCls}>Servicio requerido</label>
         <textarea
           id="service-detail" name="service" rows={4} required
-          placeholder="Contanos qué servicio necesitás o detalles de tu operación"
+          placeholder="Contanos que necesitas"
           value={form.serviceDetail}
           onChange={(e) => setForm((p) => ({ ...p, serviceDetail: e.target.value }))}
           className={inputCls}
