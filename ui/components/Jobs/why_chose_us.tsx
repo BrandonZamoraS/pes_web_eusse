@@ -13,12 +13,6 @@ const benefits: Benefit[] = [
     statLabel: "Satisfacción del equipo",
   },
   {
-    title: "Crecimiento profesional",
-    description: "Accedé a programas de aprendizaje continuo y rutas claras para avanzar dentro del grupo.",
-    stat: "80%",
-    statLabel: "Promociones internas",
-  },
-  {
     title: "Equilibrio vida-trabajo",
     description: "Disfrutá de horarios flexibles, programas de bienestar y beneficios integrales.",
     stat: "4.8/5",
