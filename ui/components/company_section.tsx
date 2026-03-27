@@ -23,12 +23,6 @@ const COMPANIES = [
     descriptor: "Compra rapida y conveniente en ruta",
   },
   {
-    logo: "/logos/logo-escudo-liberia.png",
-    title: "Equipo Liberia F.C.",
-    href: "https://admliberia.com/",
-    descriptor: "Pasion, formacion y competencia",
-  },
-  {
     logo: "/logos/logo-balancefit.jpg",
     title: "Gimnasio Balance Fit",
     href: "/gimnasio-balance-fit",

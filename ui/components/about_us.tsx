@@ -79,7 +79,7 @@ export default function AboutSection() {
             brillante para todos.
           </motion.p>
 
-          {/* Stats */}
+          {/* Stats 
           <div className="mb-12 grid grid-cols-3 justify-items-center">
             {stats.map((s) => (
               <motion.div
@@ -99,6 +99,7 @@ export default function AboutSection() {
               </motion.div>
             ))}
           </div>
+          */}
         </div>
 
         {/* Video */}
