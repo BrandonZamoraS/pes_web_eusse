@@ -17,7 +17,7 @@ const COMPANIES = [
     descriptor: "Mantenimiento y lubricacion especializada",
   },
   {
-    logo: "/logos/logo_minimarket_nuevo.jpeg",
+    logo: "/logos/logo_minimarket_nuevo.jpg",
     title: "MiniMarket Eusse",
     href: "/eusse-market",
     descriptor: "Compra rapida y conveniente en ruta",
