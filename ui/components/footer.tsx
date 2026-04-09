@@ -18,7 +18,7 @@ export default function Footer() {
           className="object-contain block md:hidden"
         />
         <Image
-          src="/logo-eusse-completo.webp"
+          src="/logo-eusse-completo.png"
           alt="Grupo Eusse"
           width={100}
           height={60}

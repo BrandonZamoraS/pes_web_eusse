@@ -70,7 +70,7 @@ export default function Navbar() {
           className="h-full shrink-0 sm:shrink basis-200px sm:basis-240px md:basis-200px"
         >
           <Image
-            src="/logo-eusse-completo.webp"
+            src="/logo-eusse-completo.png"
             alt="Eusse"
             width={240}
             height={56}
