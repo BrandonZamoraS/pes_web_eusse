@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Search } from "lucide-react";
 import BurgerBtn from "./burguer_btn";
-import { useMagnify } from './Magnify_comps/magnify-provider';
+import { useMagnify } from "./Magnify_comps/magnify-provider";
 
 const QUICKSTATION_LOGIN_URL = "https://quickstation.eusse.cr/login";
 
@@ -121,7 +121,7 @@ export default function Navbar() {
             className="h-8 w-auto object-contain sm:h-10"
           />
         </a>
-
+        {/* Botón de lupa con tooltip accesible 
         <div className="group relative ml-3 hidden md:inline-flex">
           <button
             type="button"
@@ -145,6 +145,8 @@ export default function Navbar() {
             Lupa para aumentar el tamaño de los objetos
           </span>
         </div>
+            */}
+
         <div className="md:hidden ml-2 shrink-0">
           <BurgerBtn links={LINKS} />
         </div>
